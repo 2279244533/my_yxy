@@ -130,5 +130,5 @@ def getPaperAnswer(paperID, examID, userId, traceId, errorCount, auth):
     
     # print(f"aaa:{response.text}")
 if __name__ == "__main__":
-    yxy = getAnswerClass("hnit24216030124", "Cs20050221.", "纲要")
+    yxy = getAnswerClass("hnit22010740133", "Lsh031010", "习近平")
     yxy.main()
