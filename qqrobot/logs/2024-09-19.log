@@ -1,0 +1,359 @@
+[2024-09-19 00:01:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:05:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:05:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40494->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:11:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:14:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:26:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41394->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:29:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38884->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:31:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45466->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:32:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57444->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:38:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:38:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53214->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:38:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:39:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:45:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41028->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:52:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:52:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48230->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:54:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:54:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:55:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:56:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:56838->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:58:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43912->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 00:59:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 00:59:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:00:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:03:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:06:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:08:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:09:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43890->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:14:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:16:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:17:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:56570->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:20:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:21:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:22:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39856->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:23:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:24:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45892->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:25:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:26:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:28:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33842->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:29:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:31:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45944->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:31:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36108->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:32:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:34:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:35:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:35:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:36:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38232->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:36:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:37:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:55684->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:38:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:32880->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:38:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45202->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:39:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48802->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:40:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:40:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:40:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:41:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:58608->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:42:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:46:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44078->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:48:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 01:59:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:42074->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 01:59:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57156->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:00:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:07:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:32780->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:08:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:08:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:12:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:13:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:15:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:19:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35940->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:20:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:20:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:21:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39602->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:22:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:23:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:23:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:26:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:27:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:31:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:31:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:32:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:60780->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:35:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:35:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:47866->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:39:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57594->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:41:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:42:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35242->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:44:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49762->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:44:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:47:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:54420->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:48:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:49:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:50:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:54:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43310->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:55:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 02:56:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41944->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 02:59:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:00:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:01:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:02:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:03:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:03:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:59826->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:06:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:59554->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:06:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:55734->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:07:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:08:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49162->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:08:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:37872->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:12:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:58442->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:12:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:12:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34484->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:13:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:14:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:14:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:46738->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:15:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44636->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:15:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34968->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:16:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33806->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:16:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:19:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:20:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40876->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:21:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43436->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:22:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:28:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:33:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40308->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:37:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:40:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:52516->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:42:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:43:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:49:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:50:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:53:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51318->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:56:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 03:58:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40480->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:58:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49372->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:58:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:47482->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 03:59:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44594->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:00:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:00:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:00:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:01:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:01:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:02:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:03:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39232->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:06:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:54344->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:10:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:47526->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:10:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38258->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:11:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53224->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:12:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:54930->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:12:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:13:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36208->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:13:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:14:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45444->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:15:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36506->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:16:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:50298->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:19:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45654->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:21:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48550->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:22:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:23:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:24:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:24:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:25:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38980->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:26:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:52056->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:27:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34370->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:27:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:30:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53046->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:33:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57746->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:34:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33404->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:40:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:40:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:50336->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:41:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:41:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:56346->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:42:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57366->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:44:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36940->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:44:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53770->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:46:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:51:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:51:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:53:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 04:54:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35550->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:56:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35950->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:56:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49392->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 04:58:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:11:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:14:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:17:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34424->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:22:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:50248->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:22:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:23:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39482->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:28:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:30:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:30:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:31:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51988->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:33:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33150->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:34:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48016->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:39:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36460->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:41:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:43:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:43:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:44:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43108->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:46:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:37560->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:46:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36680->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:47:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:49:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:47416->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:49:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:32936->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 05:50:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:51:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 05:57:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43206->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:01:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53042->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:01:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:01:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:02:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:60774->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:02:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:32776->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:02:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:06:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:37640->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:07:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:37504->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:14:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:16:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:16:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:23:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:23:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:24:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:24:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:27:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:28:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40226->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:28:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:31:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:32:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:33:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:33:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33336->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:42:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:43:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 06:46:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39140->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:46:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45852->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:50:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48324->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:52:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45504->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 06:59:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:00:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:01:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36146->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:02:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:03:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:03:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": http: server closed idle connection 将进行第 1 次重试 
+[2024-09-19 07:04:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:06:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38454->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:08:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38458->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:11:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48610->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:12:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34704->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:13:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:13:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:34430->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:17:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:54098->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:27:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:31:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:32:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:45:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:49:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41040->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:49:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:50664->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:54:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:56894->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:54:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 07:55:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57038->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 07:56:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44704->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:04:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:10:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:10:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:60714->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:11:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:11:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:12:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40032->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:18:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:59650->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:20:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:21:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:26:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:39376->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:26:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38484->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:28:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:30:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49478->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:32:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:33:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33150->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:34:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43172->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:41:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51700->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:42:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:36838->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:42:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35104->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:46:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:46:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:58952->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:47:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:58110->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:48:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:50:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:50:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:51:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:59326->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:54:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:54:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49796->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 08:55:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 08:55:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48822->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:05:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40778->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:06:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:43460->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:07:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:52384->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:09:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:09:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:09:50] [ERROR]: Protocol -> parse incoming packet error: session expired 
+[2024-09-19 09:09:50] [WARNING]: Bot已离线: session expired 
+[2024-09-19 09:09:53] [WARNING]: 将在 3 秒后尝试重连. 重连次数：2/0 
+[2024-09-19 09:09:56] [WARNING]: 尝试重连... 
+[2024-09-19 09:09:57] [WARNING]: Protocol -> device lock is disabled. HTTP API may fail. 
+[2024-09-19 09:10:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51626->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:12:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53056->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:14:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:33706->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:16:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:17:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:18:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:37432->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:19:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:24:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:53452->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:25:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:55960->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:26:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:27:24] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:27:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:30:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:31:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44234->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:32:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:33:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:35:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:38:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:42288->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:38:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:52718->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:40:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:42:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:45:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41464->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:45:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35544->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:47:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51110->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:49:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:59142->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 09:52:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:53:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:54:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 09:54:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:35900->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:00:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:01:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:45694->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:01:34] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:04:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:04:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:05:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:51974->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:09:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:54544->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:10:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:49406->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:10:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:60096->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:12:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:18:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:40102->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:20:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:23:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:24:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:48656->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:27:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:27:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44708->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:27:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:38992->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:28:59] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:29:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:34:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:47462->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:35:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:38:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:50694->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:39:44] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:40:39] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:43:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:44:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:44:54] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57678->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:47:19] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:49:09] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:57102->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:51:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:54:04] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:44276->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:54:49] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:41574->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
+[2024-09-19 10:58:14] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": EOF 将进行第 1 次重试 
+[2024-09-19 10:58:29] [WARNING]: 上报 Event 数据到 http://localhost:5050/callback 失败: Post "http://localhost:5050/callback": read tcp 127.0.0.1:55992->127.0.0.1:5050: read: connection reset by peer 将进行第 1 次重试 
