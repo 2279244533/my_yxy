@@ -18,6 +18,8 @@ class yxyClass:
             course_name = "毛泽东"
         if course_name == "德法":
             course_name = "思想道德"
+        if course_name == "习概":
+            course_name = "习近平"
         self.course_name = course_name
         self.errConut = errCount
         
