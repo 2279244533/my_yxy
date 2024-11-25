@@ -38,9 +38,9 @@ def send_private_message(request: SendPrivateMessageRequest):
 
 # 消息验证函数
 def validate_message(message):
-    valid_courses = ["马原", "毛概", "德法", "形势", "纲要", "习近平"]
+    valid_courses = ["马原", "毛概", "德法", "形势", "纲要", "新时代"]
     
-    pattern = r"^([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要]+)\s+(\d+)$"
+    pattern = r"^([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|新时代]+)\s+(\d+)$"
     match = re.match(pattern, message)
     
     if match:
