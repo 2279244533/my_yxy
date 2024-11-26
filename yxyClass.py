@@ -3,6 +3,7 @@ import string
 from login.LoginDemo import LoginDemo  
 import method
 from myError import CustomError
+from proxy import get_proxy
         
         
 class yxyClass:
@@ -12,6 +13,7 @@ class yxyClass:
         """
         self.account = account
         self.password = password
+        self.proxy = get_proxy()
         if course_name == "马原":
             course_name = "马克思"
         if course_name == "毛概":
@@ -29,13 +31,13 @@ class yxyClass:
         """
         # 调用 LoginDemo 中的登录方法，并传入账号和密码
         try:
-            login_result = LoginDemo.yxy_login_demo(self.account, self.password)
+            login_result = LoginDemo.yxy_login_demo(self.account, self.password, proxy=self.proxy)
         except:
             raise CustomError("账号密码错误")
         
         self.login_result = login_result
         # print(self.login_result)
-        index_result = method.get_courses(self.login_result['token'])
+        index_result = method.get_courses(self.login_result['token'], proxy=self.proxy)
         print(index_result)
         print(self.course_name)
 
@@ -48,11 +50,11 @@ class yxyClass:
             target_id = [course for course in self.index_reult if self.course_name in course['name']][0]['id']
         except Exception as e:
             raise CustomError(f"课程 '{self.course_name}' 不存在")
-        self.appHomeActivity_result = method.get_appHomeActivity(target_id, self.login_result['token'])
+        self.appHomeActivity_result = method.get_appHomeActivity(target_id, self.login_result['token'], proxy=self.proxy)
 
         # print(target_id)
         self.ExamList_result = method.get_ExamList(
-            login_result['userID'], target_id, self.login_result['userID'], self.login_result['token'])
+            login_result['userID'], target_id, self.login_result['userID'], self.login_result['token'], proxy=self.proxy)
         print(self.ExamList_result)
         if len(self.ExamList_result) == 0:
             raise CustomError("不存在考试")
@@ -61,9 +63,9 @@ class yxyClass:
         
         terminalId = ''.join(random.choice(string.hexdigits.lower()) for _ in range(16))
         for exam in self.ExamList_result:
-            examTime = method.getExamInfo(login_result['userID'], exam['examID'], target_id, self.login_result['token'])
+            examTime = method.getExamInfo(login_result['userID'], exam['examID'], target_id, self.login_result['token'], proxy=self.proxy)
             # print(examTime)
-            current_exam_result = method.startExam(login_result['userID'], exam['examID'], target_id, self.login_result['token'])
+            current_exam_result = method.startExam(login_result['userID'], exam['examID'], target_id, self.login_result['token'], proxy=self.proxy)
             # print(current_exam_result)
             
             paper = method.getPaperForStudent(
@@ -72,7 +74,8 @@ class yxyClass:
                 exam['examID'],
                 current_exam_result['examUserID'],
                 target_id,
-                self.login_result['token']
+                self.login_result['token'],
+                proxy=self.proxy
             )
             # print(paper)
             info = method.setBehaviorTrace(
@@ -82,7 +85,8 @@ class yxyClass:
                 current_exam_result['examUserID'], 
                 terminalId, 
                 2, 
-                self.login_result['token']
+                self.login_result['token'],
+                proxy=self.proxy
             )
             answer = method.getPaperAnswer(
                 current_exam_result['paperID'],  # 试卷ID
@@ -99,7 +103,8 @@ class yxyClass:
                 examTime,                              # 考试时间
                 answer,                                # 答案
                 current_exam_result['examUserID'],     # 再次传递试卷用户ID
-                self.login_result['token']             # 授权Token
+                self.login_result['token'],
+                proxy=self.proxy# 授权Token
             )
             print(res)
             if res != "true":
@@ -111,7 +116,8 @@ class yxyClass:
                 current_exam_result['examUserID'], 
                 terminalId, 
                 3, 
-                self.login_result['token']
+                self.login_result['token'],
+                proxy=self.proxy
             )
             info = method.setBehaviorTrace(
                 login_result['userID'], 
@@ -120,7 +126,8 @@ class yxyClass:
                 current_exam_result['examUserID'], 
                 terminalId, 
                 2, 
-                self.login_result['token']
+                self.login_result['token'],
+                proxy=self.proxy
             )
 
         

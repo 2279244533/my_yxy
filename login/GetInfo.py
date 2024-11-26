@@ -28,44 +28,27 @@ class MyWebRequest:
         if head:
             self.head.update(head)
 
-    def get_course_list(self, token):
-        """获取课程列表"""
-        if token:
-            self.head["Authorization"] = token
-        return self.get(self.GET_COURSE_LIST_URL)
 
-    def get_course_home_activity(self, token, course_id):
-        """获取指定课程信息"""
-        if token:
-            self.head["Authorization"] = token
-        return self.get(f"{self.GET_COURSE_HOME_ACTIVITY_URL}{course_id}")
-
-    def get_course_activity(self, token, course_id, user_id):
-        """获取指定课程活动"""
-        if token:
-            self.head["Authorization"] = token
-        return self.get(f"{self.GET_COURSE_ACTIVITY_URL}{course_id}/{user_id}")
-
-    def post_res(self, token, request_type, request_body):
+    def post_res(self, token, request_type, request_body, proxy):
         if token:
             self.head["Authorization"] = token
 
         if request_type == RequestType.FUN_ACTIVITY_SIGN:
-            return self.post(self.FUN_ACTIVITY_SIGN_URL, request_body)
+            return self.post(self.FUN_ACTIVITY_SIGN_URL, request_body, proxy=proxy)
         return None
 
-    def get(self, url):
+    def get(self, url, proxy):
         try:
-            response = requests.get(url, headers=self.head, timeout=6)
+            response = requests.get(url, headers=self.head, timeout=6, proxies=proxy)
             response.raise_for_status()  # 如果响应错误，则引发异常
             return response.text
         except Exception as e:
             print(e)
             return None
 
-    def post(self, url, body):
+    def post(self, url, body, proxy):
         try:
-            response = requests.post(url, headers=self.head, data=body, timeout=6)
+            response = requests.post(url, headers=self.head, data=body, timeout=6, proxies=proxy)
             response.raise_for_status()  # 如果响应错误，则引发异常
             return response.text
         except Exception as e:

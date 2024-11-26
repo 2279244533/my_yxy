@@ -16,18 +16,6 @@ class LoginDemo:
     Uversion = "2"
     Platform = "android"
 
-    @staticmethod
-    def main():
-        # print("优学院登录加解密演示程序")
-        input_choice = input("请选择演示(1:加密,2:解密,3:完整登录演示): ")
-        if input_choice == "1":
-            LoginDemo.yxy_encrypt_demo()
-        elif input_choice == "2":
-            LoginDemo.yxy_unencrypt_demo()
-        elif input_choice == "3":
-            LoginDemo.yxy_login_demo()
-        else:
-            print("输入错误")
 
     @staticmethod
     def yxy_encrypt_demo():
@@ -38,7 +26,7 @@ class LoginDemo:
         return LoginDemo.yxy_encrypt_demo_func(phone, password)
 
     @staticmethod
-    def yxy_encrypt_demo_func(phone, password):
+    def yxy_encrypt_demo_func(phone, password, proxy):
         try:
             password = EncryptUtils.md5_encrypt(password)
         except Exception as e:
@@ -78,9 +66,9 @@ class LoginDemo:
         return y_hashmap
 
     @staticmethod
-    def yxy_login_demo(phone=None, pwd=None):
-        postBody = LoginDemo.yxy_encrypt_demo_func(phone, pwd) if phone and pwd else LoginDemo.yxy_encrypt_demo()
-        response = LoginDemo.posty(postBody)
+    def yxy_login_demo(phone=None, pwd=None, proxy=None):
+        postBody = LoginDemo.yxy_encrypt_demo_func(phone, pwd, proxy) if phone and pwd else LoginDemo.yxy_encrypt_demo()
+        response = LoginDemo.posty(postBody, proxy=proxy)
         # print("\n原始响应包:\n" + response)
         res_object = json.loads(response)
         code = res_object.get("code")
@@ -105,7 +93,7 @@ class LoginDemo:
         }
 
     @staticmethod
-    def posty(postBody):
+    def posty(postBody, proxy):
         url = "https://apps.ulearning.cn/login/v2"
         headers = {
             "Accept-Language": "zh-cn",
@@ -117,7 +105,7 @@ class LoginDemo:
             "Accept-Encoding": "gzip, deflate",
             "Connection": "close"
         }
-        response = requests.post(url, headers=headers, data=postBody, timeout=6)
+        response = requests.post(url, headers=headers, data=postBody, timeout=6, proxies=proxy)
         response.raise_for_status()  # Raise an error for bad responses
         return response.text
 
