@@ -268,7 +268,7 @@ class KeJian:
                 print(i.name, i.value)
         if response.status_code == 302:
             print("登录成功")
-            time.sleep(1)
+            time.sleep(0.5)
         else:
             print("登录失败")
             raise CustomError("账号密码错误")
@@ -283,13 +283,14 @@ class KeJian:
             'ps': 15,
             'lang': "zh"
         }
-        response = self.session.get(COURSE_URL, params=data, timeout=60)
+        response = self.session.get(COURSE_URL, params=data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "courseList" in json_data and isinstance(json_data["courseList"], list):
             logging.info("课程列表获取成功！")
+            time.sleep(0.5)
             return json_data["courseList"]
-            time.sleep(1)
+
         else:
             logging.error("响应中未包含课程列表或格式错误")
             raise CustomError("获取课程列表失败")
@@ -304,7 +305,7 @@ class KeJian:
         json_data = response.json()
         if len(json_data) != 0:
             logging.info("课件获取成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data
         else:
             logging.error("响应中未包含课件或格式错误")
@@ -319,12 +320,12 @@ class KeJian:
             'textbookId': textbookId,
             'lang': 'zh'
         }
-        response = self.session.get(TEXTBOOK_INFORMATION_URL, params=data, timeout=60)
+        response = self.session.get(TEXTBOOK_INFORMATION_URL, params=data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "list" in json_data and isinstance(json_data["list"], list):
             logging.info("课件信息获取成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data["list"]
         else:
             logging.error("响应中未包含课件信息或格式错误")
@@ -334,12 +335,12 @@ class KeJian:
     def get_class(self, ocId):
         url = CLASS_URL + "/" + str(ocId)
         data = {"lang":"zh"}
-        response = self.session.get(url, params=data, timeout=60)
+        response = self.session.get(url, params=data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "classId" in json_data :
             logging.info("班级id获取成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data["classId"]
         else:
             logging.error("响应中未包含班级id或格式错误")
@@ -349,12 +350,12 @@ class KeJian:
     def get_stu(self, textbook_id, classId):
         url = STU_URL + "/" + str(textbook_id) + "/" + "directory"
         data = {"classId": classId}
-        response = self.session.get(url, params=data, timeout=60)
+        response = self.session.get(url, params=data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "chapters" in json_data and isinstance(json_data["chapters"], list):
             logging.info("学习信息获取成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data["chapters"]
         else:
             logging.error("响应中未包含学习信息或格式错误")
@@ -363,12 +364,12 @@ class KeJian:
     # 初始化学习记录
     def studyrecord_init(self, itemid):
         url = STUDYRECORD_URL + "/" + str(itemid)
-        response = self.session.get(url, timeout=60)
+        response = self.session.get(url, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data is not None:
             logging.info("学习记录初始化成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data
         else:
             logging.error("响应中未包含学习记录初始化或格式错误")
@@ -377,12 +378,12 @@ class KeJian:
     # 学习章节内容   内含视频长度
     def chapter(self, nodeid):
         url = CHAPTER_URL + "/" + str(nodeid)
-        response = self.session.get(url, timeout=60)
+        response = self.session.get(url, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "wholepageItemDTOList" in json_data:
             logging.info("学习详情获取成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data["wholepageItemDTOList"]
         else:
             logging.error("响应中未包含学习详情或格式错误")
@@ -397,12 +398,12 @@ class KeJian:
             "user-agent": UserAgent,
             "Content-Type": "application/json"
         }
-        response = self.session.post(RECORD_URL, params = params, data = data_json, headers=headers, timeout=60)
+        response = self.session.post(RECORD_URL, params = params, data = data_json, headers=headers, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data == 1:
             logging.info("进度保存成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data
         else:
             logging.error("响应中未包含学习详情或格式错误")
@@ -412,12 +413,12 @@ class KeJian:
     # 学习心跳检测
     def heartbeat(self, itemid, init_time):
         url = HEARTBEAT_URL + "/" + str(itemid) + "/" + str(init_time)
-        response = self.session.get(url, timeout=60)
+        response = self.session.get(url, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data["status"] == 0:
             logging.info("学习记录心跳检测成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data
         else:
             logging.error("响应中未包含学习记录心跳检测或格式错误")
@@ -428,13 +429,13 @@ class KeJian:
     def get_study_info(self, itemid, courseType):
         url = STUDY_TIME_URL + "/" + str(itemid)
         data = {"courseType":courseType}
-        response = self.session.get(url,params=data, timeout=60)
+        response = self.session.get(url,params=data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         if response.text != "" and response.text is not None:
             json_data = response.json()
             if json_data is not None:
                 logging.info("学习信息获取成功！")
-                time.sleep(1)
+                time.sleep(0.5)
                 return json_data
             else:
                 logging.error("响应中未包含学习信息或格式错误")
@@ -447,12 +448,12 @@ class KeJian:
     def get_answer(self, question_id, parentId):
         url = ANSWER_URL + "/" + str(question_id)
         data = {"parentId":parentId}
-        response = self.session.get(url, params= data, timeout=60)
+        response = self.session.get(url, params= data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "correctAnswerList" in json_data:
             logging.info("获取答案成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return json_data["correctAnswerList"]
         else:
             logging.error("响应中未包含答案或格式错误")
@@ -467,19 +468,19 @@ class KeJian:
             "courseId": courseId,
             "videoId": videoId
         }
-        response = self.session.post(WATCH_VIDEO_URL, json= data, timeout=60)
+        response = self.session.post(WATCH_VIDEO_URL, json= data, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         logging.info("观看视频成功！")
-        time.sleep(1)
+        time.sleep(0.5)
 
 
     # 获取用户姓名
     def get_user_name(self):
-        response = self.session.get(USER_URL, timeout=60)
+        response = self.session.get(USER_URL, timeout=30)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         if "name" in response.json():
             logging.info("获取用户姓名成功！")
-            time.sleep(1)
+            time.sleep(0.5)
             return response.json()["name"]
         else:
             raise CustomError("获取用户姓名失败")

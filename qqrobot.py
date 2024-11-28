@@ -42,21 +42,27 @@ def validate_message(message):
     valid_courses = ["马原", "毛概", "德法", "形势", "纲要", "习概"]
     valid_types = ["复习题", "课件", "全部"]
     
-    # 正则表达式匹配
-    pattern = r"^(复习题|课件|全部)\s+([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)(?:\s+(\d+))?$"
+    # 根据类型选择正则表达式
+    if message.startswith("复习题"):
+        pattern = r"^复习题\s+([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)\s+(\d+)$"
+    elif message.startswith("课件"):
+        pattern = r"^课件\s+([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)$"
+    elif message.startswith("全部"):
+        pattern = r"^全部\s+([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)\s+(\d+)$"
+    else:
+        return False, None, None, None, None, None
+
     match = re.match(pattern, message)
     
     if match:
-        msg_type = match.group(1)
-        account = match.group(2)
-        password = match.group(3)
-        course_name = match.group(4)
-        error_count = match.group(5)
+        account = match.group(1)
+        password = match.group(2)
+        course_name = match.group(3)
+        error_count = int(match.group(4)) if len(match.groups()) == 4 else None
         
         # 检查课程名称是否有效
         if course_name in valid_courses:
-            # 将错题数转换为整数（如果有）
-            error_count = int(error_count) if error_count else None
+            msg_type = message.split()[0]
             return True, msg_type, account, password, course_name, error_count
         else:
             return False, None, None, None, None, None
