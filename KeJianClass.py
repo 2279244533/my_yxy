@@ -62,7 +62,7 @@ class KeJian:
 
         # 获取课件信息
         textbook_information = self.get_textbook_information(ocId, textbook_id)
-        print(f"总章节信息{textbook_information}")
+        # print(f"总章节信息{textbook_information}")
         directory = self.get_stu(textbook_id, class_id)
 
         for p in directory:
@@ -283,7 +283,7 @@ class KeJian:
             'ps': 15,
             'lang': "zh"
         }
-        response = self.session.get(COURSE_URL, params=data, timeout=30)
+        response = self.session.get(COURSE_URL, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "courseList" in json_data and isinstance(json_data["courseList"], list):
@@ -320,7 +320,7 @@ class KeJian:
             'textbookId': textbookId,
             'lang': 'zh'
         }
-        response = self.session.get(TEXTBOOK_INFORMATION_URL, params=data, timeout=30)
+        response = self.session.get(TEXTBOOK_INFORMATION_URL, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "list" in json_data and isinstance(json_data["list"], list):
@@ -335,7 +335,7 @@ class KeJian:
     def get_class(self, ocId):
         url = CLASS_URL + "/" + str(ocId)
         data = {"lang":"zh"}
-        response = self.session.get(url, params=data, timeout=30)
+        response = self.session.get(url, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "classId" in json_data :
@@ -350,7 +350,7 @@ class KeJian:
     def get_stu(self, textbook_id, classId):
         url = STU_URL + "/" + str(textbook_id) + "/" + "directory"
         data = {"classId": classId}
-        response = self.session.get(url, params=data, timeout=30)
+        response = self.session.get(url, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "chapters" in json_data and isinstance(json_data["chapters"], list):
@@ -364,7 +364,7 @@ class KeJian:
     # 初始化学习记录
     def studyrecord_init(self, itemid):
         url = STUDYRECORD_URL + "/" + str(itemid)
-        response = self.session.get(url, timeout=30)
+        response = self.session.get(url, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data is not None:
@@ -378,7 +378,7 @@ class KeJian:
     # 学习章节内容   内含视频长度
     def chapter(self, nodeid):
         url = CHAPTER_URL + "/" + str(nodeid)
-        response = self.session.get(url, timeout=30)
+        response = self.session.get(url, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "wholepageItemDTOList" in json_data:
@@ -398,7 +398,7 @@ class KeJian:
             "user-agent": UserAgent,
             "Content-Type": "application/json"
         }
-        response = self.session.post(RECORD_URL, params = params, data = data_json, headers=headers, timeout=30)
+        response = self.session.post(RECORD_URL, params = params, data = data_json, headers=headers, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data == 1:
@@ -413,7 +413,7 @@ class KeJian:
     # 学习心跳检测
     def heartbeat(self, itemid, init_time):
         url = HEARTBEAT_URL + "/" + str(itemid) + "/" + str(init_time)
-        response = self.session.get(url, timeout=30)
+        response = self.session.get(url, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data["status"] == 0:
@@ -429,7 +429,7 @@ class KeJian:
     def get_study_info(self, itemid, courseType):
         url = STUDY_TIME_URL + "/" + str(itemid)
         data = {"courseType":courseType}
-        response = self.session.get(url,params=data, timeout=30)
+        response = self.session.get(url,params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         if response.text != "" and response.text is not None:
             json_data = response.json()
@@ -448,7 +448,7 @@ class KeJian:
     def get_answer(self, question_id, parentId):
         url = ANSWER_URL + "/" + str(question_id)
         data = {"parentId":parentId}
-        response = self.session.get(url, params= data, timeout=30)
+        response = self.session.get(url, params= data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "correctAnswerList" in json_data:
@@ -468,7 +468,7 @@ class KeJian:
             "courseId": courseId,
             "videoId": videoId
         }
-        response = self.session.post(WATCH_VIDEO_URL, json= data, timeout=30)
+        response = self.session.post(WATCH_VIDEO_URL, json= data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         logging.info("观看视频成功！")
         time.sleep(0.5)
@@ -476,7 +476,7 @@ class KeJian:
 
     # 获取用户姓名
     def get_user_name(self):
-        response = self.session.get(USER_URL, timeout=30)
+        response = self.session.get(USER_URL, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         if "name" in response.json():
             logging.info("获取用户姓名成功！")
@@ -488,6 +488,6 @@ class KeJian:
 
 
 if __name__ == "__main__":
-    yxy = FuXiTi("hnit24205010431", "Yxy123456", "形势")
+    yxy = KeJian("hnit24205010431", "Yxy123456", "形势")
     yxy.main()
 
