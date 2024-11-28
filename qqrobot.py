@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify
 import re
 import httpx
 from threading import Thread
-from yxyClass import yxyClass
+from FuXiTiClass import FuXiTi
+from KeJianClass import KeJian
 import mymysql
 from myError import CustomError
 import conf
@@ -39,50 +40,42 @@ def send_private_message(request: SendPrivateMessageRequest):
 # 消息验证函数
 def validate_message(message):
     valid_courses = ["马原", "毛概", "德法", "形势", "纲要", "习概"]
+    valid_types = ["复习题", "课件", "全部"]
     
-    pattern = r"^([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)\s+(\d+)$"
+    # 正则表达式匹配
+    pattern = r"^(复习题|课件|全部)\s+([a-zA-Z0-9_]+)\s+([^\s]+)\s+([马原|毛概|德法|形势|纲要|习概]+)(?:\s+(\d+))?$"
     match = re.match(pattern, message)
     
     if match:
-        account = match.group(1)
-        password = match.group(2)
-        course_name = match.group(3)
-        error_count = int(match.group(4))
+        msg_type = match.group(1)
+        account = match.group(2)
+        password = match.group(3)
+        course_name = match.group(4)
+        error_count = match.group(5)
         
+        # 检查课程名称是否有效
         if course_name in valid_courses:
-            return True, account, password, course_name, error_count
+            # 将错题数转换为整数（如果有）
+            error_count = int(error_count) if error_count else None
+            return True, msg_type, account, password, course_name, error_count
         else:
-            return False, None, None, None, None
+            return False, None, None, None, None, None
     else:
-        return False, None, None, None, None
+        return False, None, None, None, None, None
 
 def process_message(data):
     try:
-        is_valid, account, password, course_name, error_count = validate_message(data.get("message"))
+        is_valid, msg_type, account, password, course_name, error_count = validate_message(data.get("message"))
         
         if is_valid:
-            print(f"账号: {account}, 密码: {password}, 课程名: {course_name}, 错题数: {error_count}")
-            try:
-                yxy = yxyClass(account, password, course_name, error_count)
-                yxy.main()
-                
-                mymysql.update_count_for_qq(str(data.get("user_id")))
-                
-                # 发送成功消息
-                send_private_message(SendPrivateMessageRequest(
-                    user_id=data['user_id'],
-                    message=f"{data.get('message')}\n答题保存成功"
-                ))
-            except CustomError as e:
-                send_private_message(SendPrivateMessageRequest(
-                    user_id=data['user_id'],
-                    message=f"{data.get('message')}\n失败: {e.message}"
-                ))
-            except Exception as e:
-                send_private_message(SendPrivateMessageRequest(
-                    user_id=data['user_id'],
-                    message=f"{data.get('message')}\n错误：{e}"
-                ))
+            print(f"类型：{msg_type}, 账号: {account}, 密码: {password}, 课程名: {course_name}, 错题数: {error_count}")
+            if msg_type == "复习题":
+                do_FuXiTi(data, account, password, course_name, error_count)
+            elif msg_type == "课件":
+                do_KeJian(data, account, password, course_name)
+            elif msg_type == "全部":
+                do_All(data, account, password, course_name, error_count)
+ 
         else:
             if data.get("message") == "查询":
                 count = mymysql.get_count_for_qq(data.get("user_id"))
@@ -93,14 +86,65 @@ def process_message(data):
             else:
                 send_private_message(SendPrivateMessageRequest(
                     user_id=data['user_id'],
-                    message=f"格式错误, 格式：\n账号 密码 课程名 错题数"
+                    message=f"格式错误, 格式：\n复习题|课件|全部 账号 密码 课程名 错题数(刷课件不填)\n可选课程:马原|毛概|德法|形势|纲要|习概"
                 ))
     except Exception as e:
         send_private_message(SendPrivateMessageRequest(
             user_id=data['user_id'],
             message=f"系统错误: {str(e)}"
         ))
+        
+def do_FuXiTi(data, account, password, course_name, error_count):
+    try:
+        yxy = FuXiTi(account, password, course_name, error_count)
+        yxy.main()
+        
+        mymysql.update_count_for_qq(str(data.get("user_id")))
+        
+        # 发送成功消息
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n答题保存成功"
+        ))
+    except CustomError as e:
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n失败: {e.message}"
+        ))
+    except Exception as e:
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n错误：{e}"
+        ))
+        
+def do_KeJian(data, account, password, course_name):
+    try:
+        yxy = KeJian(account, password, course_name)
+        yxy.main()
+        
+        mymysql.update_count_for_qq(str(data.get("user_id")))
+        
+        # 发送成功消息
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n课件已成功看完"
+        ))
+    except CustomError as e:
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n失败: {e.message}"
+        ))
+    except Exception as e:
+        send_private_message(SendPrivateMessageRequest(
+            user_id=data['user_id'],
+            message=f"{data.get('message')}\n错误：{e}"
+        ))
+    
 
+def do_All(data, account, password, course_name, error_count):
+    do_FuXiTi(data, account, password, course_name, error_count)
+    do_KeJian(data, account, password, course_name)
+    
 @app.route("/callback", methods=["POST"])
 def handle_callback():
     try:

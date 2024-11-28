@@ -6,7 +6,7 @@ from myError import CustomError
 from proxy import get_proxy
         
         
-class yxyClass:
+class FuXiTi:
     def __init__(self, account, password, course_name, errCount):
         """
         构造方法，初始化账号和密码
