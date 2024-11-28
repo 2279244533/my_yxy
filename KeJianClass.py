@@ -70,7 +70,7 @@ class KeJian:
             nodeid = p["nodeid"]
             # 获取当前小章节具体内容:
             chapter_info = self.chapter(nodeid)
-            print(f"当前小章节内容:{chapter_info}")
+            # print(f"当前小章节内容:{chapter_info}")
             items = p["items"]
             total_time = 0
 
