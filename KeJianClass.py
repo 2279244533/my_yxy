@@ -489,6 +489,6 @@ class KeJian:
 
 
 if __name__ == "__main__":
-    yxy = KeJian("19947286909", "999111Hena", "形势")
+    yxy = KeJian("15616418412", "1234567Aa@", "习概")
     yxy.main()
 
