@@ -267,6 +267,7 @@ def savePaperAnswerToMemcache(traceId, autoSavedKey, examTime, answer, examUserI
     new_minutes = new_seconds // 60
     new_remaining_seconds = new_seconds % 60
     surplus = f"{new_minutes}:{new_remaining_seconds:02d}"
+    print(surplus)
     
     # 构造data字典
     answer = sorted(answer, key=lambda x: x["ID"])

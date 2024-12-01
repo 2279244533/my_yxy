@@ -115,12 +115,12 @@ def do_FuXiTi(data, account, password, course_name, error_count):
     except CustomError as e:
         send_private_message(SendPrivateMessageRequest(
             user_id=data['user_id'],
-            message=f"{data.get('message')}\n失败: {e.message}"
+            message=f"{data.get('message')}\n复习题失败: {e.message}"
         ))
     except Exception as e:
         send_private_message(SendPrivateMessageRequest(
             user_id=data['user_id'],
-            message=f"{data.get('message')}\n错误：{e}"
+            message=f"{data.get('message')}\n复习题错误：{e}"
         ))
         
 def do_KeJian(data, account, password, course_name):
@@ -138,12 +138,12 @@ def do_KeJian(data, account, password, course_name):
     except CustomError as e:
         send_private_message(SendPrivateMessageRequest(
             user_id=data['user_id'],
-            message=f"{data.get('message')}\n失败: {e.message}"
+            message=f"{data.get('message')}\n课件失败: {e.message}"
         ))
     except Exception as e:
         send_private_message(SendPrivateMessageRequest(
             user_id=data['user_id'],
-            message=f"{data.get('message')}\n错误：{e}"
+            message=f"{data.get('message')}\n课件错误：{e}"
         ))
     
 

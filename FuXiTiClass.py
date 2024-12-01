@@ -132,5 +132,5 @@ class FuXiTi:
 
         
 if __name__ == "__main__":
-    yxy = yxyClass("19947286909", "999111Hena", "马克思", 3)
+    yxy = FuXiTi("hnit22010340305", "3W4W5W6W", "习概", 3)
     yxy.main()
