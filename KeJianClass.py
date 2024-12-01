@@ -1,9 +1,11 @@
 import random
 import re
+from datetime import datetime
 
-from constant import (LOGIN_URL,UserAgent,CHEATCHECK_URL,CHECK_URL,LOGINAPI_URL,
-                      COURSE_URL,Authorization,TEXTBOOK_URL,TEXTBOOK_INFORMATION_URL,
-                      STU_URL,CLASS_URL,STUDYRECORD_URL,CHAPTER_URL,HEARTBEAT_URL,STUDY_TIME_URL,ANSWER_URL,RECORD_URL,AES_KEY,WATCH_VIDEO_URL,USER_URL)
+from constant import (LOGIN_URL, UserAgent, CHEATCHECK_URL, CHECK_URL, LOGINAPI_URL,
+                      COURSE_URL, Authorization, TEXTBOOK_URL, TEXTBOOK_INFORMATION_URL,
+                      STU_URL, CLASS_URL, STUDYRECORD_URL, CHAPTER_URL, HEARTBEAT_URL, STUDY_TIME_URL, ANSWER_URL,
+                      RECORD_URL, AES_KEY, WATCH_VIDEO_URL, USER_URL)
 import requests
 import logging
 import entry
@@ -17,9 +19,10 @@ from myError import CustomError
 from proxy import get_proxy
 import time
 
+
 class KeJian:
-    
-    def __init__(self,account,password,course_name):
+
+    def __init__(self, account, password, course_name):
         self.account = account
         self.password = password
         if course_name == "马原":
@@ -35,28 +38,33 @@ class KeJian:
         self.session = requests.Session()
         self.session.proxies.update(self.proxy)
         self.session.headers.update({"User-Agent": UserAgent})
-        
+
     def main(self):
         ocId = ""
         textbook_id = ""
         status = ""
 
         # 登录 查询课程列表
-        self.login(self.account,self.password)
+        self.login(self.account, self.password)
         course_list = self.get_course()
-        print(course_list)
         # 获取课件id
         for i in course_list:
-                if self.course_name in i["name"]:
-                    ocId = i["id"]
-                    print(f"ocId: {ocId}")
-                    textbook = self.get_textbook(ocId)[0]
-                    textbook_id = textbook["courseId"]
-                    status = textbook["status"]
-                    print(f"课件状态:{'正常' if status==1 else '停止'}")
-                    print(f"课件id:{textbook_id}")
-                if status==-1:
-                    raise CustomError("课件已截止...............")
+            if self.course_name in i["name"]:
+                print(f"当前课程:{i['name']}")
+                current_month = datetime.now().month
+                sxq = "春" in i["name"] and current_month >= 3 and current_month <= 8
+                xxq = "秋" in i["name"] and (9 <= current_month <= 12 or current_month == 1 or current_month == 2)
+                if not (sxq or xxq):
+                    break
+                ocId = i["id"]
+                print(f"ocId: {ocId}")
+                textbook = self.get_textbook(ocId)[0]
+                textbook_id = textbook["courseId"]
+                status = textbook["status"]
+                print(f"课件状态:{'正常' if status == 1 else '停止'}")
+                print(f"课件id:{textbook_id}")
+            if status == -1:
+                raise CustomError("课件已截止...............")
 
         class_id = self.get_class(ocId)
 
@@ -87,7 +95,7 @@ class KeJian:
                 itemid = i["itemid"]
                 for i in chapter_info:
                     item_id2 = i["itemid"]
-                    if itemid == item_id2 and (info is None or info["score"] != 100 ):
+                    if itemid == item_id2 and (info is None or info["score"] != 100):
                         # 初始化学习
                         wholepageDTOList = i["wholepageDTOList"]
                         init_time = self.studyrecord_init(itemid)
@@ -106,9 +114,11 @@ class KeJian:
                                     self.watch_video(nodeid, class_id, textbook_id, video_id)
                                     video_lenth = course_page["videoLength"]
                                     study_time = float(video_lenth) + random.randint(0, 10)
-                                    video = Video(videoid=video_id, current=0.0, status=1, recordTime=0, time=video_lenth)
+                                    video = Video(videoid=video_id, current=0.0, status=1, recordTime=0,
+                                                  time=video_lenth)
                                     video_list.append(video)
-                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(0, relationid, study_time, video_list).to_dict()
+                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(0, relationid, study_time,
+                                                                                     video_list).to_dict()
                                 elif "questionDTOList" in course_page and len(course_page["questionDTOList"]) > 0:
                                     # 当前为答题
                                     questionDTOList = course_page["questionDTOList"]
@@ -120,37 +130,42 @@ class KeJian:
                                             question_id = question["questionid"]
                                             score = question["score"]
                                             answerList = self.get_answer(question_id, parentid)
-                                            question_i = Question(questionid=question_id, answerList=answerList, score=score)
+                                            question_i = Question(questionid=question_id, answerList=answerList,
+                                                                  score=score)
                                             question_list.append(question_i)
-                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(1, relationid, study_time, question_list,
-                                                                                coursepageId=coursepageId).to_dict()
+                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(1, relationid, study_time,
+                                                                                     question_list,
+                                                                                     coursepageId=coursepageId).to_dict()
                                 else:
                                     study_time = random.randint(100, 500)
-                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(0, relationid, study_time, []).to_dict()
+                                    pageStudyRecordDTO = self.get_pageStudyRecordDTO(0, relationid, study_time,
+                                                                                     []).to_dict()
 
                             init_data["pageStudyRecordDTOList"].append(pageStudyRecordDTO)
 
                         print(init_data)
                         self.record(json.dumps(init_data, ensure_ascii=False))
 
-        
-
     def cheatCheck(self, loginName):
-        data = {"loginName":loginName}
+        data = {"loginName": loginName}
         response = self.session.get(CHEATCHECK_URL, params=data)
         print(response.text)
+
     def check(self, loginName, password):
-        data = {"loginName":loginName,"password":password}
+        data = {"loginName": loginName, "password": password}
         response = self.session.get(CHECK_URL, params=data)
         print(response.text)
+
     def loginApi(self, loginName):
-        data = {"loginName":loginName}
+        data = {"loginName": loginName}
         response = self.session.get(LOGINAPI_URL, params=data)
         print(response.text)
+
     def seconds_to_hhmmss(self, seconds):
         hours, remainder = divmod(seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
         return f"{hours:02}:{minutes:02}:{seconds:02}"
+
     def des_encrypt(self, data, key):
         """
         使用 DES 加密数据
@@ -176,6 +191,7 @@ class KeJian:
         encrypted_base64 = base64.b64encode(encrypted_bytes).decode('utf-8')
 
         return encrypted_base64
+
     def des_decrypt(self, encrypted_data, key):
         """
         使用 DES 解密数据
@@ -212,6 +228,7 @@ class KeJian:
             pageStudyRecordDTOList=pageStudyRecordDTOList
         )
         return record
+
     def get_pageStudyRecordDTO(self, type, pageid, studyTime, type_list, **kwargs):
         if type == 0:
             pageStudyRecordDTO = PageStudyRecordDTO(
@@ -242,7 +259,7 @@ class KeJian:
             return questionStudyRecordDTO
 
     # 登录
-    def login(self,loginName, password):
+    def login(self, loginName, password):
         data = {
             'loginName': loginName,
             'password': password
@@ -287,11 +304,10 @@ class KeJian:
             logging.error("响应中未包含课程列表或格式错误")
             raise CustomError("获取课程列表失败")
 
-
     # 课件id
     def get_textbook(self, ocId):
         url = TEXTBOOK_URL + "/" + str(ocId) + "/" + "list"
-        data = {"lang":"zh"}
+        data = {"lang": "zh"}
         response = self.session.get(url, params=data)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
@@ -303,9 +319,8 @@ class KeJian:
             logging.error("响应中未包含课件或格式错误")
             raise CustomError("无课件")
 
-
     # 课件章节信息
-    def get_textbook_information(self,ocId, textbookId):
+    def get_textbook_information(self, ocId, textbookId):
         data = {
             'currentPlatformType': 1,
             'ocId': ocId,
@@ -326,11 +341,11 @@ class KeJian:
     # 获取班级
     def get_class(self, ocId):
         url = CLASS_URL + "/" + str(ocId)
-        data = {"lang":"zh"}
+        data = {"lang": "zh"}
         response = self.session.get(url, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
-        if "classId" in json_data :
+        if "classId" in json_data:
             logging.info("班级id获取成功！")
             time.sleep(0.5)
             return json_data["classId"]
@@ -382,15 +397,15 @@ class KeJian:
             raise CustomError("课件详情获取失败")
 
     def record(self, data):
-        params = {"courseType": 4,"platform": "PC"}
-        data_json = des_encrypt(data, AES_KEY)
+        params = {"courseType": 4, "platform": "PC"}
+        data_json = self.des_encrypt(data, AES_KEY)
         headers = {
             "authorization": self.session.cookies.get('AUTHORIZATION'),
             "ua-authorization": self.session.cookies.get('AUTHORIZATION'),
             "user-agent": UserAgent,
             "Content-Type": "application/json"
         }
-        response = self.session.post(RECORD_URL, params = params, data = data_json, headers=headers, timeout=15)
+        response = self.session.post(RECORD_URL, params=params, data=data_json, headers=headers, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if json_data == 1:
@@ -400,7 +415,6 @@ class KeJian:
         else:
             logging.error("响应中未包含学习详情或格式错误")
             raise CustomError("进度保存失败")
-
 
     # 学习心跳检测
     def heartbeat(self, itemid, init_time):
@@ -416,12 +430,11 @@ class KeJian:
             logging.error("响应中未包含学习记录心跳检测或格式错误")
             raise CustomError("心跳检测失败")
 
-
     # 获取学习信息
     def get_study_info(self, itemid, courseType):
         url = STUDY_TIME_URL + "/" + str(itemid)
-        data = {"courseType":courseType}
-        response = self.session.get(url,params=data, timeout=15)
+        data = {"courseType": courseType}
+        response = self.session.get(url, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         if response.text != "" and response.text is not None:
             json_data = response.json()
@@ -435,12 +448,11 @@ class KeJian:
         else:
             return None
 
-
     # 获取答案
     def get_answer(self, question_id, parentId):
         url = ANSWER_URL + "/" + str(question_id)
-        data = {"parentId":parentId}
-        response = self.session.get(url, params= data, timeout=15)
+        data = {"parentId": parentId}
+        response = self.session.get(url, params=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         json_data = response.json()
         if "correctAnswerList" in json_data:
@@ -451,7 +463,6 @@ class KeJian:
             logging.error("响应中未包含答案或格式错误")
             raise CustomError("获取答案失败")
 
-
     # 开始观看视频
     def watch_video(self, chapterId, classId, courseId, videoId):
         data = {
@@ -460,11 +471,10 @@ class KeJian:
             "courseId": courseId,
             "videoId": videoId
         }
-        response = self.session.post(WATCH_VIDEO_URL, json= data, timeout=15)
+        response = self.session.post(WATCH_VIDEO_URL, json=data, timeout=15)
         response.raise_for_status()  # 检查 HTTP 响应状态码，如果不是 2xx 会抛出异常
         logging.info("观看视频成功！")
         time.sleep(0.5)
-
 
     # 获取用户姓名
     def get_user_name(self):
@@ -478,8 +488,7 @@ class KeJian:
             raise CustomError("获取用户姓名失败")
 
 
-
 if __name__ == "__main__":
-    yxy = KeJian("hnit24205010431", "Yxy123456", "形势")
+    yxy = KeJian("19947286909", "999111Hena", "形势")
     yxy.main()
 
