@@ -275,6 +275,8 @@ class KeJian:
             })
             for i in response.cookies:
                 print(i.name, i.value)
+        if not response.cookies:
+            raise CustomError("账号密码错误")
         if response.status_code == 302:
             print("登录成功")
             time.sleep(0.5)
@@ -489,6 +491,6 @@ class KeJian:
 
 
 if __name__ == "__main__":
-    yxy = KeJian("19947286909", "999111Hena", "形势")
+    yxy = KeJian("hnit24206010312", "kunn11ng3", "德法")
     yxy.main()
 
