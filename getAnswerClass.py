@@ -125,7 +125,7 @@ def getPaperAnswer(paperID, examID, userId, traceId, errorCount, auth):
     }
 
     # 发起GET请求
-    response = requests.get(url, headers=headers, params=params)
+    response = requests.get(url, headers=headers, params=params, verify = False)
     return response.text
     
     # print(f"aaa:{response.text}")

@@ -20,7 +20,7 @@ def get_courses(athu, proxy):
     url = "https://courseapi.ulearning.cn/courses/students?publishStatus=1&pn=1&ps=20&type=1"
     
     # 发送 GET 请求
-    response = requests.get(url, headers=courses_header, proxies=proxy).json()
+    response = requests.get(url, headers=courses_header, proxies=proxy, verify = False).json()
     
     # 提取符合条件的课程
     filtered_courses = [
@@ -50,7 +50,7 @@ def get_appHomeActivity(course_id, athu, proxy):
         "platform": "android",
     }
     url = f"https://courseapi.ulearning.cn/appHomeActivity/v4/{course_id}"
-    response = requests.get(url, headers=appHomeActivity_header, proxies=proxy).json()
+    response = requests.get(url, headers=appHomeActivity_header, proxies=proxy, verify = False).json()
     filtered_activities = [
         {
             "score": activity["score"],
@@ -83,7 +83,7 @@ def get_ExamList(userID, ocId, traceId, athu, proxy):
         "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
     }
     url = f"https://apps.ulearning.cn/exam/getExamList?userID={userID}&ocId={ocId}&intPage=1&lang=zh&traceId={traceId}"
-    response = requests.get(url, headers=ExamList_header, proxies=proxy).json()
+    response = requests.get(url, headers=ExamList_header, proxies=proxy, verify = False).json()
     filtered_examArr = [
         {key: exam[key] for key in ('isLate', 'examID', 'title')} 
         for exam in response['examArr']
@@ -120,7 +120,7 @@ def startExam(userID, examID, traceId, athu, proxy):
     }
     url = "https://apps.ulearning.cn/exam/startExam"
 
-    response_data = requests.get(url, headers=startExam_header, params=params, proxies=proxy).json()
+    response_data = requests.get(url, headers=startExam_header, params=params, proxies=proxy, verify = False).json()
     # Extracting the required fields
     extracted_data = {
         "examUserID": response_data["examUserID"],
@@ -190,7 +190,7 @@ def setBehaviorTrace(userId, traceId, examId, examUserId, terminalId, opt, athu,
             "requestTime": timestamp_milliseconds
         }
         
-    response = requests.post(url, headers=headers, json=data, proxies=proxy)
+    response = requests.post(url, headers=headers, json=data, proxies=proxy, verify = False)
     return response.text
 
 
@@ -224,7 +224,7 @@ def getPaperForStudent(paperID, userID, examID, examuserId, traceId, athu, proxy
         "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
     }
 
-    response = requests.get(url, headers=headers, params=params, proxies=proxy).json()
+    response = requests.get(url, headers=headers, params=params, proxies=proxy, verify = False).json()
     
     return response
     
@@ -283,7 +283,7 @@ def savePaperAnswerToMemcache(traceId, autoSavedKey, examTime, answer, examUserI
     
     json_data = json.dumps(data)
     # print(json.dumps(json_data))
-    response = requests.post(url, headers=headers, data=json_data, proxies=proxy)
+    response = requests.post(url, headers=headers, data=json_data, proxies=proxy, verify = False)
     
     return response.text
 
@@ -376,7 +376,7 @@ def getExamInfo(userID, examID, traceId, athu, proxy):
     }
 
     # 发起GET请求
-    response = requests.get(url, headers=headers, params=params, proxies=proxy).json()
+    response = requests.get(url, headers=headers, params=params, proxies=proxy, verify = False).json()
     examTime = response['examTime']
     return examTime
 
