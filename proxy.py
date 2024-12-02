@@ -52,7 +52,7 @@ def getProxy():
         ip = dic["ip"]
         port = dic["port"]
         proxyUrl = f"http://{ip}:{port}"
-        proxy = {'http': proxyUrl, "https": proxyUrl}
+        proxy = {'HTTPS': proxyUrl, "HTTP": proxyUrl}
         return proxy
 
     return None

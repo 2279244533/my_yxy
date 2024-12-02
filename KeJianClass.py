@@ -492,5 +492,6 @@ class KeJian:
 
 if __name__ == "__main__":
     yxy = KeJian("hnit24206010312", "kunnong3", "德法")
+    yxy.main()
 
 
